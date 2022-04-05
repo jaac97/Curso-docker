@@ -1,0 +1,21 @@
+@mixin telefono{
+    @media (min-width: 480px){
+        @content;
+    }
+}
+@mixin table {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1200px){
+         @content;
+    }
+}
+
+@mixin grid ($columns, $space){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $space;
+}

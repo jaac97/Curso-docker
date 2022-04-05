@@ -1,0 +1,12 @@
+FROM ubuntu:22.04
+RUN apt-get update -y && apt-get install apache2 -y
+
+WORDIR /var/www/
+
+ENVcontenido probando
+
+COPY seguro /var/www/html
+
+RUN echo "$contenido" > /var/www/html/prueba.html
+
+CMD ["apache2ctl","-DFOREGROUND"]

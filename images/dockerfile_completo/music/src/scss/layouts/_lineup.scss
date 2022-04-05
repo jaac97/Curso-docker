@@ -1,0 +1,83 @@
+.lineup {
+    background-color: $pink;
+    padding: $separacion 0;
+}
+
+.lineup__heading,
+.lineup__dia {
+    text-align: center;
+    color: $white;
+}
+
+.lineup__dia {
+    text-transform: uppercase;
+    margin: $separacion 0;
+}
+
+.escenarios {
+    @include table {
+        @include grid(2, $separacion)
+    }
+}
+
+.escenario {
+    padding-top: $separacion/2;
+    margin-bottom: $separacion;
+
+    @include table {
+        margin-bottom: 0;
+    }
+}
+
+.escenario__nombre {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: $thin;
+
+    &::after {
+        content: '';
+        width: 20rem;
+        height: 10rem;
+        display: block;
+
+        margin: 2rem auto 0;
+        background-size: 15rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.escenario--rock .escenario__nombre {
+    &::after {
+        background-image: url('../img/icono_rock.png');
+    }
+}
+
+.escenario--edm .escenario__nombre {
+    &::after {
+        background-image: url('../img/icono_edm.png');
+    }
+}
+
+.calendario {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.calendario__item {
+    padding: $separacion/2;
+    font-weight: $bold;
+}
+
+.calendario__item--thin {
+    font-weight: $regular;
+}
+
+.bg--green .calendario__item:nth-child(odd) {
+    background-color: darken($green, 10);
+}
+
+.bg--yellow .calendario__item:nth-child(odd) {
+    background-color: darken($yellow, 10);
+}

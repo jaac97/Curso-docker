@@ -1,0 +1,31 @@
+{
+    "name": "music-festival",
+    "version": "1.0.0",
+    "description": "Lading page using HTML, CSS-SASS, JavaScript and Gulp above a imaginary music festival",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "HTML",
+        "CSS",
+        "GULP",
+        "SASS",
+        "JavaScript"
+    ],
+    "author": "Josué Alarcón",
+    "license": "ISC",
+    "devDependencies": {
+        "dart-sass": "^1.25.0",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-notify": "^4.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-webp": "^4.0.1",
+        "node-sass": "^6.0.1"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
+    }
+}

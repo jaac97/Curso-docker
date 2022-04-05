@@ -1,0 +1,62 @@
+.boletos {
+    padding: $separacion 0;
+}
+.boletos__heading{
+    margin-bottom: $separacion/2;
+}
+
+.boletos__heading,
+.boleto__heading {
+    text-align: center;
+    color: $white;
+}
+
+.boleto__heading {
+    font-size: 3rem;
+    
+}
+
+.boletos__contenedor {
+
+    @include table {
+        @include grid(2, $separacion)
+    }
+
+}
+
+.tabla {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.tabla__heading {
+    background-color: $pink;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $regular;
+    font-size: 2.2rem;
+
+}
+
+.tabla__caracteristicas {
+    background-color: $white;
+    font-size: 2rem;
+    border: 1px solid #e1e1e1;
+}
+.tabla__caracteristicas:last-of-type{
+    border: none
+}
+
+.tabla__precio {
+    background-color: $purple;
+    color: $white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tabla__caracteristicas,
+.tabla__heading,
+.tabla__precio {
+    padding: 1.5rem;
+    margin: 0;
+}

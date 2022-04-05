@@ -1,0 +1,46 @@
+.header{
+    background-color:$green;
+    &.fijo{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 30;
+        // box-shadow: 0 .3rem .4rem #c1c1c1;
+    }
+}
+.fijo + .content {
+    padding-top: 80px;
+  }
+.header__contain{
+    padding: $separacion/2 0;
+    text-align: center;
+    @include telefono{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+}
+.header__heading{
+    color: $white;
+    margin-bottom: 1rem;
+    @include telefono{
+        margin-bottom: 0;
+    }
+
+}
+.navegation-principal{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.navegation__ancher{
+    color: $white;
+    font-size: 2rem;
+    &:hover{
+        color: $yellow;
+    }
+
+}
+

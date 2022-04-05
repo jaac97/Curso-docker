@@ -1,0 +1,4 @@
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./apache.key -out ./apache.crt
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache.key -out /etc/ssl/certs/apache.crt
+systemctl reload apache2

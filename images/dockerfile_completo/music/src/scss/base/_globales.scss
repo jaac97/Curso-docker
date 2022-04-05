@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: $mainFont;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: 1.6rem;
+
+}
+.fixed{
+    overflow-y: hidden;
+}
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+h1,h2,h3{
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    color: $black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg--yellow{
+    background-color: $yellow;
+}
+.bg--green{
+    background-color: $green;
+}

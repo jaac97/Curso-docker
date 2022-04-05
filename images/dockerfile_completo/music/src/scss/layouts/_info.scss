@@ -1,0 +1,24 @@
+.info{
+    padding: $separacion 0;
+    @include table{
+       @include grid(2, 5rem);
+        
+    }
+}
+.info__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info__heading{
+    font-size: 3rem;
+}
+.info__fecha{
+    font-weight: $bold;
+    color: $pink;
+    
+}
+.info__texto{
+    line-height: 1.5;
+
+}
