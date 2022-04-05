@@ -1,0 +1,10 @@
+Docker images
+    Muestra las images en el sistema
+Docker ps
+    Muestra contenedores ejecutandose
+    -a 
+    Muestra todos los contenedores existentes
+Docker build -t nombre_imagen .
+    Crea una imagen con las capas dentro del Dockerfile
+Docker run -d -t nombre_imagen    
+    Crear un contenedor
